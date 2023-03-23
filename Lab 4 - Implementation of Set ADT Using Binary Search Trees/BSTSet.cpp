@@ -320,7 +320,7 @@ int BSTSet::size()
 
 /*
 * Time Complexity
-* Average Case: O(log(n))
+* Average Case: O(n)
 * Worst Case: O(n)
 * Space Complexity: S(1)
 */
