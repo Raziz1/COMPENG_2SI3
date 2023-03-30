@@ -26,6 +26,7 @@ using namespace std;
 * Description: Creates an empty hash table.The amount of memory allocated for the hash table should be large
 * enough so that maxNum keys could be stored without its load factor exceeding
 * the value of parameter load
+* 
 */
 HashTableLin::HashTableLin(int maxNum, double load)
 {
@@ -89,6 +90,10 @@ int HashTableLin::isPrime(int n) {
 * Return Value: No Return but modifies the current HastTableLin object
 *
 * Description: Inserts an integer into the hash table using linear probing
+* 
+*
+* Run time: Average - Θ(1), Worst-Case - Θ(n)
+* Space complexity: S(1)
 */
 void HashTableLin::insert(int n)
 {
@@ -130,6 +135,9 @@ void HashTableLin::insert(int n)
 * Return Value: No Return but modifies the current HastTableLin object
 *
 * Description: Expands the current HashTableLin 
+* 
+* Run time: Average - Θ(n)
+* Space complexity: S(1)
 */
 void HashTableLin::rehash()
 {
@@ -164,6 +172,9 @@ void HashTableLin::rehash()
 * Return Value: bool - represents whether the parameter 'n' has been found in the hash table
 *
 * Description: Returns true if key n is in this hash table. It returns false otherwise
+* 
+* Run time: Average - Θ(1), Worst-Case - Θ(n)
+* Space complexity: S(1)
 */
 bool HashTableLin::isIn(int n)
 {
@@ -233,6 +244,9 @@ double HashTableLin::getMaxLoadFactor() {
 * Return Value: int probe_index - Represents the amount of linear probing steps required 
 *
 * Description: Inserts an integer into a hash table without rehashing and counts the probing steps required
+* 
+* Run time: Average - Θ(1), Worst-Case - Θ(n)
+* Space complexity: S(1)
 */
 int HashTableLin::insertCount(int n) {
 	// If the HashTable does contain the element we want to insert then we do not need to insert it 

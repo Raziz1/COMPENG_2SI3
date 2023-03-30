@@ -89,6 +89,8 @@ int HashTableQuad::isPrime(int n) {
 * Return Value: No Return but modifies the current HastTableQuad object
 *
 * Description: Inserts an integer into the hash table using quadratic probing
+* Run time: Average - Θ(1), Worst-Case - Θ(n)
+* Space complexity: S(1)
 */
 void HashTableQuad::insert(int n)
 {
@@ -130,6 +132,9 @@ void HashTableQuad::insert(int n)
 * Return Value: No Return but modifies the current HastTableQuad object
 *
 * Description: Expands the current HashTableLin
+* 
+* Run time: Average - Θ(n)
+* Space complexity: S(1)
 */
 void HashTableQuad::rehash()
 {
@@ -162,6 +167,9 @@ void HashTableQuad::rehash()
 * Return Value: bool - represents whether the parameter 'n' has been found in the hash table
 *
 * Description: Returns true if key n is in this hash table. It returns false otherwise
+* 
+* Run time: Average - Θ(1), Worst-Case - Θ(n)
+* Space complexity: S(1)
 */
 bool HashTableQuad::isIn(int n)
 {
@@ -233,6 +241,9 @@ double HashTableQuad::getMaxLoadFactor() {
 * Return Value: int probe_index - Represents the amount of quadratic probing steps required
 *
 * Description: Inserts an integer into a hash table without rehashing and counts the probing steps required
+* 
+* Run time: Average - Θ(1), Worst-Case - Θ(n)
+* Space complexity: S(1)
 */
 int HashTableQuad::insertCount(int n) {
 	// If the HashTable does contain the element we want to insert then we do not need to insert it 
