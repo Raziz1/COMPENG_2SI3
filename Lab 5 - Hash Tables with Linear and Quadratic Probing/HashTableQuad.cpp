@@ -134,7 +134,7 @@ void HashTableQuad::insert(int n)
 * Description: Expands the current HashTableLin
 * 
 * Run time: Average - Θ(n)
-* Space complexity: S(1)
+* Space complexity: S(n)
 */
 void HashTableQuad::rehash()
 {
